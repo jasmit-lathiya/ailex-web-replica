@@ -1,13 +1,13 @@
 // src/pages/home/sections/HeroSection.tsx
 
-import { motion, Variants } from 'framer-motion'
+import { motion, useInView, Variants } from 'framer-motion'
 import heroSectionBg from '../../../../assets/heroSection/heroSectionBg.jpeg'
 import starIcon from '../../../../assets/icons/star.svg'
 import aiIcon from '../../../../assets/icons/ai.svg'
 import heroSectionChatbotImg from '../../../../assets/heroSection/heroSectionChatbot.png'
 import heroSectionChartImg from '../../../../assets/heroSection/heroSectionChart.png'
 import heroSectionPhotoImg from '../../../../assets/heroSection/heroSectionPhoto.png'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { PrimaryButton, SecondaryButton } from '../../../../atoms/button'
 
 const heroSectionImages = [
@@ -45,25 +45,17 @@ const char: Variants = {
   },
 }
 
-const imageVariants: Variants = {
-  hidden: {
-    opacity: 0,
-    y: 60,
-  },
-  show: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      delay: index * 0.3,
-      ease: [0.44, 0, 0.56, 1],
-    },
-  }),
-}
-
 const HeroSection = () => {
   const [isAiLogoAnimationComplete, setisAiLogoAnimationComplete] =
     useState(false)
+
+  const ref = useRef(null)
+  const isInView = useInView(ref, {
+    once: true,
+    amount: 0.3,
+  })
+
+  const shouldAnimate = isAiLogoAnimationComplete && isInView
   return (
     <section className="relative h-full w-full overflow-hidden font-switzer font-medium text-primaryDisabled pt-48 flex justify-center">
       {/* Background Image */}
@@ -165,33 +157,36 @@ const HeroSection = () => {
         </motion.div>
 
         {/* <div className="flex items-start justify-center mt-24"> */}
-        <div className="w-full flex items-center gap-6 justify-between mt-12 md:mt-24 p-4">
+        <div
+          ref={ref}
+          className="w-full flex items-center gap-6 justify-between mt-12 md:mt-24 p-4"
+        >
           {heroSectionImages.map((image, index) => (
             <motion.img
               key={index}
               src={image}
-              custom={index}
-              variants={imageVariants}
-              initial="hidden"
-              animate={isAiLogoAnimationComplete ? 'show' : 'hidden'}
-              className="
-          flex-1 min-w-0
-          w-auto
-          h-auto
-          rounded-2xl
-          shrink-0
-          shadow-2xl
-          translate-y-12
-        "
-              style={{
-                // skewX: '12deg',
-                skewY: '12deg',
-                y: 48,
+              initial={{ opacity: 0, y: 80, skewY: '12deg' }}
+              animate={
+                shouldAnimate
+                  ? { opacity: 1, y: 0, skewY: '12deg' }
+                  : { opacity: 0, y: 80, skewY: '12deg' }
+              }
+              transition={{
+                duration: 0.8,
+                delay: index * 0.15,
+                ease: 'easeOut',
               }}
+              className="
+        flex-1 min-w-0
+        w-auto
+        h-auto
+        rounded-2xl
+        shrink-0
+        shadow-2xl
+      "
             />
           ))}
         </div>
-
         {/* Bottom Fade */}
         {/* <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-black to-transparent" /> */}
         {/* </div> */}
