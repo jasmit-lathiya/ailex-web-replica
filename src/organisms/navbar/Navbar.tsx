@@ -1,0 +1,147 @@
+// components/layout/Navbar.tsx
+
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
+import ailexLogo from '../../assets/icons/ailexLogoWithName.svg'
+import { motion } from 'framer-motion'
+import { defaultWhite, primaryDisabled } from '../../constants/palette'
+import { Link, useLocation } from 'react-router-dom'
+import { PrimaryButton } from '../../atoms/button'
+
+const navLinks = [
+  { name: 'Home', href: '/', mobileOrder: 1 },
+  { name: 'Pricing', href: '/pricing', mobileOrder: 2 },
+  { name: 'Resource', href: '/resource', mobileOrder: 4 },
+  { name: 'Blog', href: '/blog', mobileOrder: 3 },
+]
+const Navbar = () => {
+  const location = useLocation()
+  const [isOpen, setIsOpen] = useState(false)
+
+  return (
+    <nav className="w-full absolute top-6 left-0 z-50 bg-transparent">
+      <div className="max-w-7xl mx-auto px-7 lg:px-10">
+        <div className="flex items-center justify-between h-20 gap-4">
+          {/* LEFT - LOGO */}
+          <div className="flex items-center">
+            <Link to="/" className="flex items-center">
+              <img
+                src={ailexLogo}
+                alt="Logo"
+                className="h-10 w-auto object-contain"
+              />
+            </Link>
+          </div>
+
+          {/* CENTER - DESKTOP NAV */}
+          <div className="hidden md:flex flex-1 items-center justify-center gap-6">
+            {navLinks.map((link) => (
+              <Link to={link.href}>
+                <motion.span
+                  initial={false}
+                  animate={{
+                    color:
+                      location.pathname === link.href
+                        ? defaultWhite
+                        : primaryDisabled,
+                  }}
+                  whileHover={{
+                    color: defaultWhite,
+                  }}
+                  transition={{
+                    duration: 0.5,
+                    ease: [0.44, 0, 0.56, 1],
+                  }}
+                  className="relative font-switzer font-medium"
+                >
+                  {link.name}
+                </motion.span>
+              </Link>
+            ))}
+          </div>
+
+          {/* RIGHT - DESKTOP BUTTON */}
+          <div className="hidden md:flex items-center">
+            <PrimaryButton className="text-sm">Try free</PrimaryButton>
+          </div>
+
+          {/* MOBILE MENU BUTTON */}
+          {/* <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-white"
+          >
+            {isOpen ? <X size={30} /> : <Menu size={30} />}
+          </button> */}
+
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="relative w-8 h-8 p-4 flex flex-col items-center justify-center md:hidden border border-primaryDisabled/10 rounded-lg"
+          >
+            {/* TOP LINE */}
+            <motion.span
+              animate={{
+                rotate: isOpen ? 45 : 0,
+                y: isOpen ? 0 : -4,
+              }}
+              transition={{
+                duration: 0.3,
+                ease: [0.44, 0, 0.56, 1],
+              }}
+              className="absolute w-6 h-[2px] bg-primaryDisabled rounded-full"
+            />
+
+            {/* BOTTOM LINE */}
+            <motion.span
+              animate={{
+                rotate: isOpen ? -45 : 0,
+                y: isOpen ? 0 : 4,
+              }}
+              transition={{
+                duration: 0.3,
+                ease: [0.44, 0, 0.56, 1],
+              }}
+              className="absolute w-6 h-[2px] bg-primaryDisabled rounded-full"
+            />
+          </button>
+        </div>
+      </div>
+
+      {/* MOBILE MENU */}
+      <div
+        className={`flex flex-col justify-center md:hidden overflow-hidden transition-all duration-300 ${
+          isOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
+        }`}
+      >
+        <div className="px-6 py-3 mx-2 bg-black/95 backdrop-blur-xl border border-primaryDisabled/10 rounded-xl flex flex-col gap-2">
+          {[...navLinks]
+            .sort((a, b) => a.mobileOrder - b.mobileOrder)
+            .map((link) => (
+              <Link to={link.href} onClick={() => setIsOpen(false)}>
+                <motion.span
+                  initial={false}
+                  animate={{
+                    color:
+                      location.pathname === link.href
+                        ? defaultWhite
+                        : primaryDisabled,
+                  }}
+                  whileHover={{
+                    color: defaultWhite,
+                  }}
+                  transition={{
+                    duration: 0.5,
+                    ease: [0.44, 0, 0.56, 1],
+                  }}
+                  className="relative text-sm font-switzer font-medium"
+                >
+                  {link.name}
+                </motion.span>
+              </Link>
+            ))}
+        </div>
+      </div>
+    </nav>
+  )
+}
+
+export default Navbar
