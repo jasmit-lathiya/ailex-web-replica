@@ -1,7 +1,6 @@
 // components/layout/Navbar.tsx
 
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
 import ailexLogo from '../../assets/icons/ailexLogoWithName.svg'
 import { motion } from 'framer-motion'
 import { defaultWhite, primaryDisabled } from '../../constants/palette'
@@ -19,9 +18,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="w-full absolute top-6 left-0 z-50 bg-transparent">
+    <nav className="w-full fixed md:absolute md:top-6 left-0 z-50">
+      <div className="absolute md:hidden top-0 right-0 w-full h-full backdrop-blur-lg [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] z-[-10]" />
       <div className="max-w-7xl mx-auto px-7 lg:px-10">
-        <div className="flex items-center justify-between h-20 gap-4">
+        <div className="flex items-center justify-between h-16 gap-4">
           {/* LEFT - LOGO */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
@@ -36,7 +36,7 @@ const Navbar = () => {
           {/* CENTER - DESKTOP NAV */}
           <div className="hidden md:flex flex-1 items-center justify-center gap-6">
             {navLinks.map((link) => (
-              <Link to={link.href}>
+              <Link to={link.href} key={link.name}>
                 <motion.span
                   initial={false}
                   animate={{
@@ -116,7 +116,11 @@ const Navbar = () => {
           {[...navLinks]
             .sort((a, b) => a.mobileOrder - b.mobileOrder)
             .map((link) => (
-              <Link to={link.href} onClick={() => setIsOpen(false)}>
+              <Link
+                key={link.name}
+                to={link.href}
+                onClick={() => setIsOpen(false)}
+              >
                 <motion.span
                   initial={false}
                   animate={{
