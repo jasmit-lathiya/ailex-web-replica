@@ -52,7 +52,7 @@ const AiShowcaseSection = () => {
   const [activeIndex, setActiveIndex] = useState(0)
   return (
     <motion.div
-      className="w-full max-w-7xl flex flex-col gap-8 mx-auto"
+      className="w-full max-w-6xl flex flex-col gap-8 mx-auto"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

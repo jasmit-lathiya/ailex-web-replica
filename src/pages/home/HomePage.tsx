@@ -9,6 +9,7 @@ import TestimonialSection from './organisms/testimonialSection'
 import CTASection from './organisms/ctaSection'
 import FooterSection from './organisms/footerSection'
 import LatestInsightSection from './organisms/latestInsightSection'
+import AdvantageSection from './organisms/advantageSection'
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       <AiShowcaseSection />
       <WorkflowSection />
       <IntegrationSection />
+      <AdvantageSection />
       <PricingPreviewSection />
       <TestimonialSection />
       <LatestInsightSection />

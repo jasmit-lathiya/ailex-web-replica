@@ -70,7 +70,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl flex flex-col h-full items-center justify-center">
+      <div className="relative z-10 max-w-6xl flex flex-col h-full items-center justify-center">
         <motion.div
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: 1, y: 0 }}

@@ -34,7 +34,7 @@ const features = [
 
 const FeatureSection = () => {
   return (
-    <div className="flex flex-col justify-center items-center max-w-7xl mx-auto py-16 px-4 font-medium gap-8">
+    <div className="flex flex-col justify-center items-center max-w-6xl mx-auto py-16 px-4 font-medium gap-8">
       <motion.div
         className="text-center font-instrument text-[38px] md:text-[44px] lg:text-[52px] p-4 max-w-xl"
         initial={{ opacity: 0, y: 50 }}

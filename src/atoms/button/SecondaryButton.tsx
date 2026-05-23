@@ -1,8 +1,8 @@
 import { ReactNode } from 'react'
-import { motion } from 'framer-motion'
+import { motion, HTMLMotionProps } from 'framer-motion'
 import { clsx } from 'clsx'
 
-interface SecondaryButtonProps {
+interface SecondaryButtonProps extends HTMLMotionProps<'button'> {
   children: ReactNode
   className?: string
 }
