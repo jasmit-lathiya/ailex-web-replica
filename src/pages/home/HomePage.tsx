@@ -1,7 +1,7 @@
 // Components
 import HeroSection from './sections/heroSection'
 import FeatureSection from './sections/featureSection'
-import ClientLogoSection from './sections/clientLogoSection'
+import ClientLogoSection from '../../organisms/clientLogoSection'
 import AiShowcaseSection from './sections/aiShowcaseSection'
 import WorkflowSection from './sections/workflowSection'
 import IntegrationSection from './sections/integrationSection'

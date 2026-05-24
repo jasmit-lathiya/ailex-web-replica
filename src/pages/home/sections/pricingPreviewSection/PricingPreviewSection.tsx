@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import FreeplanCard from './organisms/freeplanCard'
-import PremiumplanCard from './organisms/premiumplanCard'
+import FreeplanCard from '../../../../organisms/freeplanCard'
+import PremiumplanCard from '../../../../organisms/premiumplanCard'
 
 const PricingPreviewSection = () => {
   return (

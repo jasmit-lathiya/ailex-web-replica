@@ -1,7 +1,7 @@
-import premiumPlanIcon from '../../../../../../assets/pricingSection/premiumplan.svg'
-import premiumplanBgImg from '../../../../../../assets/images/galaxyBg.jpeg'
-import checkedIcon from '../../../../../../assets/icons/checked.svg'
-import { SecondaryButton } from '../../../../../../atoms/button'
+import premiumPlanIcon from '../../assets/pricingSection/premiumplan.svg'
+import premiumplanBgImg from '../../assets/images/galaxyBg.jpeg'
+import checkedIcon from '../../assets/icons/checked.svg'
+import { SecondaryButton } from '../../atoms/button'
 import { useState } from 'react'
 
 const premiumPlanFeatures = [

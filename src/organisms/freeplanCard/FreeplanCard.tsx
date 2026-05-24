@@ -1,6 +1,6 @@
-import freeplanIcon from '../../../../../../assets/pricingSection/freeplan.svg'
-import checkedIcon from '../../../../../../assets/icons/checked.svg'
-import { PrimaryButton } from '../../../../../../atoms/button'
+import freeplanIcon from '../../assets/pricingSection/freeplan.svg'
+import checkedIcon from '../../assets/icons/checked.svg'
+import { PrimaryButton } from '../../atoms/button'
 
 const freeplanFeatures = [
   'AI-powered automation tools',
@@ -11,12 +11,12 @@ const freeplanFeatures = [
 
 const FreeplanCard = () => {
   return (
-    <div className="flex-1 flex flex-col bg-primaryBg border border-defaultGrey rounded-xl font-switzer p-8 gap-8">
+    <div className="flex-1 flex flex-col bg-primaryBg border border-defaultGrey rounded-xl font-switzer p-8 gap-8 ">
       <div className="flex flex-row justify-between">
         <div className="flex items-center justify-center w-16 h-16 bg-defaultBlack border border-defaultGrey rounded-full">
           <img src={freeplanIcon} alt="Free plan" className="w-8 h-auto" />
         </div>
-        <div className="bg-defaultBlack border-transparent rounded-lg">
+        <div className="bg-defaultBlack border-transparent rounded-lg w-fit h-fit py-2 px-4">
           Free plan
         </div>
       </div>

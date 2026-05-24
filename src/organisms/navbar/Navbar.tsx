@@ -4,7 +4,7 @@ import { useState } from 'react'
 import ailexLogo from '../../assets/icons/ailexLogoWithName.svg'
 import { motion } from 'framer-motion'
 import { defaultWhite, primaryDisabled } from '../../constants/palette'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { PrimaryButton } from '../../atoms/button'
 import { ChevronDown } from 'lucide-react'
 import Resource from './Resource'
@@ -18,6 +18,7 @@ const navLinks = [
 
 const Navbar = () => {
   const location = useLocation()
+  const navigate = useNavigate()
   const [isOpen, setIsOpen] = useState(false)
   const [isResourceVisible, setIsResourceVisible] = useState(false)
 
@@ -69,7 +70,7 @@ const Navbar = () => {
 
                   {/* DROPDOWN */}
                   {isResourceVisible && (
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50">
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
                       <Resource />
                     </div>
                   )}
@@ -102,7 +103,12 @@ const Navbar = () => {
 
           {/* RIGHT - DESKTOP BUTTON */}
           <div className="hidden md:flex items-center">
-            <PrimaryButton className="text-sm">Try free</PrimaryButton>
+            <PrimaryButton
+              className="text-sm"
+              onClick={() => navigate('/contact-us')}
+            >
+              Try free
+            </PrimaryButton>
           </div>
 
           {/* MOBILE MENU BUTTON */}

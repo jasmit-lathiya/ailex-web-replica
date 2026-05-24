@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
-import artistryLogo from '../../../../assets/clienLogoSection/artistryLogo.svg'
-import dexignLogo from '../../../../assets/clienLogoSection/dexignLogo.svg'
-import emblemLogo from '../../../../assets/clienLogoSection/emblemLogo.svg'
-import graphoLogo from '../../../../assets/clienLogoSection/graphoLogo.svg'
-import iconicLogo from '../../../../assets/clienLogoSection/iconicLogo.svg'
-import optimalLogo from '../../../../assets/clienLogoSection/optimalLogo.svg'
-import visualyLogo from '../../../../assets/clienLogoSection/visualyLogo.svg'
-import waylineLogo from '../../../../assets/clienLogoSection/waylineLogo.svg'
+import artistryLogo from '../../assets/clienLogoSection/artistryLogo.svg'
+import dexignLogo from '../../assets/clienLogoSection/dexignLogo.svg'
+import emblemLogo from '../../assets/clienLogoSection/emblemLogo.svg'
+import graphoLogo from '../../assets/clienLogoSection/graphoLogo.svg'
+import iconicLogo from '../../assets/clienLogoSection/iconicLogo.svg'
+import optimalLogo from '../../assets/clienLogoSection/optimalLogo.svg'
+import visualyLogo from '../../assets/clienLogoSection/visualyLogo.svg'
+import waylineLogo from '../../assets/clienLogoSection/waylineLogo.svg'
 
 const logos = [
   artistryLogo,
