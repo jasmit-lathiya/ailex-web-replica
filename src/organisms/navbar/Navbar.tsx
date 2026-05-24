@@ -48,7 +48,11 @@ const Navbar = () => {
                 >
                   {/* TRIGGER */}
                   <motion.div className="flex items-center gap-1 cursor-pointer">
-                    <motion.span>Resources</motion.span>
+                    <motion.span
+                      className={`${isResourceVisible ? 'text-defaultWhite' : 'text-primaryDisabled'}`}
+                    >
+                      {link.name}
+                    </motion.span>
 
                     <motion.div
                       animate={{

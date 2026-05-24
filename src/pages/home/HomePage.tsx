@@ -7,7 +7,6 @@ import WorkflowSection from './sections/workflowSection'
 import IntegrationSection from './sections/integrationSection'
 import PricingPreviewSection from './sections/pricingPreviewSection'
 import TestimonialSection from './sections/testimonialSection'
-import FooterSection from './sections/footerSection'
 import LatestInsightSection from './sections/latestInsightSection'
 import AdvantageSection from './sections/advantageSection'
 
@@ -24,7 +23,6 @@ const HomePage = () => {
       <PricingPreviewSection />
       <TestimonialSection />
       <LatestInsightSection />
-      <FooterSection />
     </div>
   )
 }

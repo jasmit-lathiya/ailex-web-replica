@@ -17,7 +17,7 @@ const BlogCard = ({ title, img, category }: blogCardProps) => {
       .toLocaleLowerCase()
   return (
     <motion.div
-      className="flex flex-col gap-4 text-defaultWhite cursor-pointer"
+      className="flex flex-col gap-4 text-defaultWhite cursor-pointer font-switzer"
       whileHover="hover"
       initial="initial"
       onClick={() => navigate(blogLink)}
@@ -29,13 +29,15 @@ const BlogCard = ({ title, img, category }: blogCardProps) => {
           className="w-full h-full object-cover"
           variants={{
             initial: { scale: 1 },
-            hover: { scale: 1.1 },
+            hover: { scale: 1.05 },
           }}
           transition={{ duration: 0.4 }}
         />
       </motion.div>
 
-      <motion.span className="text-primaryDisabled">{category}</motion.span>
+      <motion.span className="text-primaryDisabled text-sm">
+        {category}
+      </motion.span>
 
       <motion.span
         className="text-wrap text-2xl"
