@@ -1,19 +1,19 @@
-import HeroSection from './organisms/heroSection'
-import FeatureSection from './organisms/featureSection'
-import ClientLogoSection from './organisms/clientLogoSection'
-import AiShowcaseSection from './organisms/aiShowcaseSection'
-import WorkflowSection from './organisms/workflowSection'
-import IntegrationSection from './organisms/integrationSection'
-import PricingPreviewSection from './organisms/pricingPreviewSection'
-import TestimonialSection from './organisms/testimonialSection'
-import CTASection from './organisms/ctaSection'
-import FooterSection from './organisms/footerSection'
-import LatestInsightSection from './organisms/latestInsightSection'
-import AdvantageSection from './organisms/advantageSection'
+// Components
+import HeroSection from './sections/heroSection'
+import FeatureSection from './sections/featureSection'
+import ClientLogoSection from './sections/clientLogoSection'
+import AiShowcaseSection from './sections/aiShowcaseSection'
+import WorkflowSection from './sections/workflowSection'
+import IntegrationSection from './sections/integrationSection'
+import PricingPreviewSection from './sections/pricingPreviewSection'
+import TestimonialSection from './sections/testimonialSection'
+import FooterSection from './sections/footerSection'
+import LatestInsightSection from './sections/latestInsightSection'
+import AdvantageSection from './sections/advantageSection'
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center gap-16">
       <HeroSection />
       <ClientLogoSection />
       <FeatureSection />
@@ -24,7 +24,6 @@ const HomePage = () => {
       <PricingPreviewSection />
       <TestimonialSection />
       <LatestInsightSection />
-      <CTASection />
       <FooterSection />
     </div>
   )
