@@ -22,7 +22,7 @@ const BlogPage = () => {
           }}
         />
         <AnimatedText
-          sentance="Blog"
+          sentence="Blog"
           className="font-instrument text-4xl md:text-6xl md:mt-48"
         />
         <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-defaultBlack to-transparent z-[-1]" />

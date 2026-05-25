@@ -43,6 +43,7 @@ const Navbar = () => {
             {navLinks.map((link) =>
               link.isDropDown ? (
                 <div
+                  key={link.name}
                   className="relative w-fit"
                   onMouseEnter={() => setIsResourceVisible(true)}
                   onMouseLeave={() => setIsResourceVisible(false)}
@@ -156,7 +157,7 @@ const Navbar = () => {
             .sort((a, b) => a.mobileOrder - b.mobileOrder)
             .map((link) =>
               link.isDropDown ? (
-                <div className="flex flex-col gap-4">
+                <div key={link.name} className="flex flex-col gap-4">
                   <div
                     className="flex flex-row justify-between cursor-pointer"
                     onClick={() => setIsResourceVisible(!isResourceVisible)}

@@ -23,7 +23,13 @@ const FooterLinks = ({ heading, linkArray }: FooterLinksProps) => {
         <span
           key={linkData.label}
           className={`cursor-pointer whitespace-nowrap text-xl ${location.pathname === linkData.link ? 'text-defaultWhite' : 'text-primaryDisabled'}`}
-          onClick={() => navigate(linkData.link)}
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth',
+            })
+            navigate(linkData.link)
+          }}
         >
           {linkData.label}
         </span>

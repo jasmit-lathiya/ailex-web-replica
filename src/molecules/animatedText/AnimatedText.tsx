@@ -30,7 +30,7 @@ const char: Variants = {
 }
 
 interface AnimatedTextProps {
-  sentance: string
+  sentence: string
   className?: string
   canStartAnimation?: boolean
   wordByWordAnimation?: boolean
@@ -39,7 +39,7 @@ interface AnimatedTextProps {
 const AnimatedText = ({
   canStartAnimation = true,
   className,
-  sentance,
+  sentence,
   wordByWordAnimation = false,
 }: AnimatedTextProps) => {
   return (
@@ -50,12 +50,12 @@ const AnimatedText = ({
       className={className || ''}
     >
       {wordByWordAnimation
-        ? sentance.split(' ').map((wordItem, i) => (
+        ? sentence.split(' ').map((wordItem, i) => (
             <motion.span key={i} variants={char} className="inline-block">
               {wordItem}&nbsp;
             </motion.span>
           ))
-        : sentance.split('').map((charItem, i) => (
+        : sentence.split('').map((charItem, i) => (
             <motion.span
               key={i}
               variants={char}

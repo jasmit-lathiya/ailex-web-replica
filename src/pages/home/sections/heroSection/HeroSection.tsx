@@ -57,13 +57,13 @@ const HeroSection = () => {
         </motion.div>
         <div className="flex flex-col items-center font-instrument text-4xl md:text-6xl lg:text-8xl text-center text-white mt-4 gap-4">
           <AnimatedText
-            sentance="Say goodbye to manual"
+            sentence="Say goodbye to manual"
             canStartAnimation={isAiLogoAnimationComplete}
           />
 
           <div className="flex flex-col md:flex-row items-center gap-4">
             <AnimatedText
-              sentance="tasks, hello to"
+              sentence="tasks, hello to"
               canStartAnimation={isAiLogoAnimationComplete}
             />
             <motion.img
@@ -79,7 +79,7 @@ const HeroSection = () => {
         </div>
 
         <AnimatedText
-          sentance="Automate repetitive tasks, analyze data instantly, and integrate with your favorite apps—so you can focus on what truly matters."
+          sentence="Automate repetitive tasks, analyze data instantly, and integrate with your favorite apps—so you can focus on what truly matters."
           canStartAnimation={isAiLogoAnimationComplete}
           wordByWordAnimation
           className="mt-4 max-w-2xl text-center text-md md:text-lg px-4"

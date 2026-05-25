@@ -66,12 +66,11 @@ const FooterSection = () => {
                 alt="Ailex Logo"
                 className="cursor-pointer"
                 onClick={() => {
-                  if (window.location.pathname === '/') {
-                    window.scrollTo({
-                      top: 0,
-                      behavior: 'smooth',
-                    })
-                  } else {
+                  window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth',
+                  })
+                  if (window.location.pathname !== '/') {
                     navigate('/')
                   }
                 }}

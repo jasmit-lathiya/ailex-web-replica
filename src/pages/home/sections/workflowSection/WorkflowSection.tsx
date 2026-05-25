@@ -52,14 +52,14 @@ const WorkFlowSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
       >
-        <div className="text-4xl md:text-6xl lg:text-7xl font-instrument max-w-3xl">
+        <span className="text-4xl md:text-6xl lg:text-7xl font-instrument max-w-3xl">
           Supercharge your apps with AI-powered automation
-        </div>
+        </span>
 
-        <div className="font-switzer text-primaryDisabled text-lg  max-w-2xl">
+        <span className="font-switzer text-primaryDisabled text-lg  max-w-2xl">
           Our AI-powered automation integrates with leading apps, ensuring
           smooth workflows and enhanced productivity.
-        </div>
+        </span>
         <SecondaryButton className="py-4 px-6">
           View all integrations
         </SecondaryButton>

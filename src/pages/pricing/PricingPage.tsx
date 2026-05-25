@@ -11,11 +11,11 @@ const PricingPage = () => {
       <div className="max-w-7xl flex flex-col items-center justify-center gap-16">
         <div className="flex flex-col items-center justify-center gap-8">
           <AnimatedText
-            sentance="Choose your plan"
+            sentence="Choose your plan"
             className="font-instrument text-4xl md:text-6xl pt-8 md:mt-24"
           />
           <AnimatedText
-            sentance="Free 14-day trial for all plans   ·   No credit card required   ·   Cancel anytime"
+            sentence="Free 14-day trial for all plans   ·   No credit card required   ·   Cancel anytime"
             className="text-lg text-primaryDisabled text-center"
             wordByWordAnimation
           />

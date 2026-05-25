@@ -42,7 +42,7 @@ function ClientLogoSection() {
             transition={{
               repeat: Infinity,
               ease: 'linear',
-              duration: 100,
+              duration: 50,
             }}
           >
             {[...logos, ...logos].map((logo, index) => (
