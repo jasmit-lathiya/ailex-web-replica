@@ -107,7 +107,14 @@ const Resource = () => {
           const Icon = resource.icon
 
           return (
-            <div className="w-full h-full bg-primaryBg border border-defaultGrey rounded-xl flex flex-col justify-between p-4 cursor-pointer text-primaryDisabled">
+            <div
+              className="w-full h-full bg-primaryBg border border-defaultGrey rounded-xl flex flex-col justify-between p-4 cursor-pointer text-primaryDisabled"
+              onClick={() => {
+                resource?.isExternalLink
+                  ? window.open(resource.link, '_blank')
+                  : navigate(resource.link)
+              }}
+            >
               <Icon className="w-4 h-4" />
               <span className="font-medium">{resource.heading}</span>
             </div>
