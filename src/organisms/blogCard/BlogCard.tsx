@@ -9,7 +9,7 @@ interface blogCardProps {
 const BlogCard = ({ title, img, category }: blogCardProps) => {
   const navigate = useNavigate()
   const blogLink =
-    'blog/' +
+    '/blog/' +
     title
       .replace(/[^a-zA-Z0-9 ]/g, '')
       .split(' ')

@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import HomePage from './pages/home'
 import PricingPage from './pages/pricing'
-import BlogPage from './pages/blog'
+import BlogPage, { BlogDetailPage } from './pages/blog'
 import Navbar from './organisms/navbar/Navbar'
 import FooterSection from './pages/home/sections/footerSection'
 import Page404 from './pages/page404'
@@ -21,6 +21,7 @@ const AppRouter = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:id" element={<BlogDetailPage />} />
         <Route path="/feature" element={<FeaturePage />} />
         <Route path="/404" element={<Page404 />} />
         <Route path="/licenses" element={<LicencePage />} />

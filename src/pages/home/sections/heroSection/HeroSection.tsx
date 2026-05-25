@@ -8,6 +8,7 @@ import heroSectionPhotoImg from '../../../../assets/heroSection/heroSectionPhoto
 import { useRef, useState } from 'react'
 import { PrimaryButton, SecondaryButton } from '../../../../atoms/button'
 import AnimatedText from '../../../../molecules/animatedText'
+import { useNavigate } from 'react-router-dom'
 
 const heroSectionImages = [
   heroSectionChatbotImg,
@@ -16,6 +17,7 @@ const heroSectionImages = [
 ]
 
 const HeroSection = () => {
+  const navigate = useNavigate()
   const [isAiLogoAnimationComplete, setisAiLogoAnimationComplete] =
     useState(false)
 
@@ -91,10 +93,16 @@ const HeroSection = () => {
           transition={{ duration: 0.5, delay: 1 }}
           className="mt-8 flex flex-row items-center gap-4 flex-wrap justify-center"
         >
-          <SecondaryButton className="text-base py-4 px-6">
+          <SecondaryButton
+            className="text-base py-4 px-6"
+            onClick={() => navigate('/feature')}
+          >
             Explore features
           </SecondaryButton>
-          <PrimaryButton className="text-base py-4 px-6">
+          <PrimaryButton
+            className="text-base py-4 px-6"
+            onClick={() => navigate('/pricing')}
+          >
             View pricing
           </PrimaryButton>
         </motion.div>

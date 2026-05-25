@@ -14,7 +14,7 @@ const PrivacyPolicyPage = () => {
       />
       <AnimatedText
         sentence="Privacy Policy"
-        className="font-instrument text-4xl md:text-6xl md:mt-24"
+        className="font-instrument text-4xl md:text-6xl md:mt-32"
       />
       <div className="flex flex-col justify-center gap-8 max-w-3xl">
         <motion.div
@@ -24,6 +24,9 @@ const PrivacyPolicyPage = () => {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
+          <span className="py-8 text-primaryDisabled font-medium">
+            Effective Date: 03 March 2026
+          </span>
           <ol className="flex flex-col gap-12 list-decimal pl-6 marker:font-instrument marker:text-defaultWhite marker:text-2xl">
             {privacyPolicyData.map((data) => (
               <li className="text-primaryDisabled" key={data.title}>

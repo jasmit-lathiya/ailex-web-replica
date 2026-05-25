@@ -55,14 +55,22 @@ const AnimatedText = ({
               {wordItem}&nbsp;
             </motion.span>
           ))
-        : sentence.split('').map((charItem, i) => (
-            <motion.span
-              key={i}
-              variants={char}
-              className="inline-block font-normal"
+        : sentence.split(' ').map((word, wordIndex) => (
+            <span
+              key={wordIndex}
+              className="inline-block whitespace-nowrap mr-1"
             >
-              {charItem === ' ' ? '\u00A0' : charItem}
-            </motion.span>
+              {word.split('').map((charItem, i) => (
+                <motion.span
+                  key={i}
+                  variants={char}
+                  className="inline-block font-normal"
+                >
+                  {charItem}
+                </motion.span>
+              ))}
+              {'\u00A0'}
+            </span>
           ))}
     </motion.div>
   )
