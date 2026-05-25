@@ -10,6 +10,7 @@ import LicencePage from './pages/licence'
 import PrivacyPolicyPage from './pages/privacyPolicy'
 import FeaturePage from './pages/feature'
 import ContactUsPage from './pages/contactUs'
+import AboutPage from './pages/about'
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/feature" element={<FeaturePage />} />
@@ -24,6 +26,7 @@ const AppRouter = () => {
         <Route path="/licenses" element={<LicencePage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
       <FooterSection />
     </BrowserRouter>

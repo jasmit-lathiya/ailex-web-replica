@@ -21,8 +21,8 @@ const logos = [
 
 function ClientLogoSection() {
   return (
-    <section className="w-full overflow-hidden py-16 ">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="w-screen overflow-hidden py-16">
+      <div className="max-w-7xl mx-auto">
         <p className="text-center font-medium mb-10">
           Helping businesses succeed worldwide
         </p>

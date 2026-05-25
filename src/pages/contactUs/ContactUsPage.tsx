@@ -1,4 +1,4 @@
-import heroSectionBg from '../../assets/images/heroSectionBg.jpeg'
+import contactUsBg from '../../assets/images/galaxyBg.jpeg'
 import accessOurKnowledgeBaseIcon from '../../assets/icons/aiProcess.svg'
 import discoverAilexTutorialsIcon from '../../assets/icons/smartIimageLabeling.svg'
 import joinOurCommunityIcon from '../../assets/icons/aiDrivenAccuracy.svg'
@@ -41,7 +41,7 @@ const ContactUsPage = () => {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-1] opacity-30"
             style={{
-              backgroundImage: `url(${heroSectionBg})`,
+              backgroundImage: `url(${contactUsBg})`,
             }}
           />
           <AnimatedText
