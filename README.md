@@ -1,46 +1,107 @@
-# Getting Started with Create React App
+# Ailex Web Replica
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+A modern web application built with React, TypeScript, Tailwind CSS, and Framer Motion. The project focuses on responsive UI design, smooth animations, reusable components, and optimized deployment workflows.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# Project Links
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Live Demo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+https://ailex-web-replica.vercel.app
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Tech Stack
 
-### `npm run build`
+## Frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- React Router DOM
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment & Hosting
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Vercel
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Project Setup Steps
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 1. Clone the Repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+git clone https://github.com/jasmit-lathiya/ailex-web-replica
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 2. Navigate to the Project Directory
 
-## Learn More
+```bash
+cd ailex-web-replica
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 3. Install Dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+```
+
+---
+
+# Run Instructions
+
+## Start Development Server
+
+```bash
+npm start
+```
+
+The application will start locally on:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# Build Instructions
+
+## Create Production Build
+
+```bash
+npm run build
+```
+
+The production-ready files will be generated inside the:
+
+```bash
+/build
+```
+
+directory.
+
+---
+
+# Deployment Details
+
+## Deployment Platform
+
+The project is deployed using:
+
+- Vercel
+
+## Deployment Steps
+
+### 1. Push Code to GitHub
+
+```bash
+git add .
+git commit -m "Initial deployment"
+git push origin main
+```
+
+When code is committed to the main branch, it is automatically deployed to the live site through Vercel.

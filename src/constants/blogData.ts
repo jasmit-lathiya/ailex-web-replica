@@ -1,3 +1,4 @@
+// Images
 import theFutureOfAiAutomation from '../assets/blog/theFutureOfAiAutomation.jpeg'
 import howAiEnhanceWorkflow from '../assets/blog/howAiEnhanceWorkflow.jpeg'
 import theRiseOfNoCode from '../assets/blog/theRiseOfNoCode.jpeg'

@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion'
+
+// Icons
 import artistryLogo from '../../assets/clienLogoSection/artistryLogo.svg'
 import dexignLogo from '../../assets/clienLogoSection/dexignLogo.svg'
 import emblemLogo from '../../assets/clienLogoSection/emblemLogo.svg'

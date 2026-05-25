@@ -15,6 +15,7 @@ const BlogCard = ({ title, img, category }: blogCardProps) => {
       .split(' ')
       .join('-')
       .toLocaleLowerCase()
+
   return (
     <motion.div
       className="flex flex-col gap-4 text-defaultWhite cursor-pointer font-switzer"

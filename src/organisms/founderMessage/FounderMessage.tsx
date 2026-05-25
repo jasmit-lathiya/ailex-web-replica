@@ -1,3 +1,4 @@
+// Images
 import founderImg from '../../assets/images/founderImg.jpeg'
 
 const FounderMessage = () => {
