@@ -1,23 +1,26 @@
 import { motion } from 'framer-motion'
+import { ChevronRight } from 'lucide-react'
 
-interface FeatureCardProps {
+interface featureCardProps {
   iconSrc: string
   title: string
   description: string
-  imgSrc: string
+  linkLabel: string
+  link: string
   delay?: number
 }
 
-const FeatureCard = ({
+const featureCard = ({
   iconSrc,
   title,
   description,
-  imgSrc,
+  linkLabel,
+  link,
   delay = 0,
-}: FeatureCardProps) => {
+}: featureCardProps) => {
   return (
     <motion.div
-      className=" flex flex-col border border-defaultGrey rounded-2xl p-12 pb-0 bg-[#070B15] gap-8 max-w-sm w-full"
+      className=" flex flex-col border border-defaultGrey rounded-2xl px-8 py-16 bg-[#070B15] gap-8 max-w-sm"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -33,16 +36,15 @@ const FeatureCard = ({
         </p>
       </div>
 
-      <div className="relative overflow-hidden pb-2">
-        <img
-          src={imgSrc}
-          alt={`${title} illustration`}
-          className="w-full rounded-lg object-cover translate-y-4"
-        />
-        <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-defaultBlack to-transparent" />
+      <div
+        className="flex flex-row cursor-pointer text-defaultWhite hover:text-primaryDisabled font-medium"
+        onClick={() => window.open(link, '_blank')}
+      >
+        <span>{linkLabel}</span>
+        <ChevronRight />
       </div>
     </motion.div>
   )
 }
 
-export default FeatureCard
+export default featureCard

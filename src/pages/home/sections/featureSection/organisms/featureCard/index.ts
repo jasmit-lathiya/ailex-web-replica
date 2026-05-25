@@ -1,3 +1,3 @@
-import featureCard from './FeatureCard'
+import FeatureCard from './FeatureCard'
 
-export default featureCard
+export default FeatureCard

@@ -32,7 +32,7 @@ const stateData = [
 ]
 
 const WorkFlowSection = () => {
-  const { isMobile, isSmallScreen } = useBreakpoint()
+  const { isSmallScreen } = useBreakpoint()
   const radius = isSmallScreen ? 180 : 525
 
   return (

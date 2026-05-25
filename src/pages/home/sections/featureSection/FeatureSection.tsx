@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import FeatureCard from './organisms/featureCard'
 import uploadIcon from '../../../../assets/featureSection/upload.svg'
-import aiProcessIcon from '../../../../assets/featureSection/aiProcess.svg'
+import aiProcessIcon from '../../../../assets/icons/aiProcess.svg'
 import resultIcon from '../../../../assets/featureSection/result.svg'
 import dragAndDropOnClickImg from '../../../../assets/featureSection/dragAndDropOnClick.png'
 import generate3DShapeImg from '../../../../assets/featureSection/generate3DShape.png'

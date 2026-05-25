@@ -9,6 +9,7 @@ import Page404 from './pages/page404'
 import LicencePage from './pages/licence'
 import PrivacyPolicyPage from './pages/privacyPolicy'
 import FeaturePage from './pages/feature'
+import ContactUsPage from './pages/contactUs'
 
 const AppRouter = () => {
   return (
@@ -22,6 +23,7 @@ const AppRouter = () => {
         <Route path="/404" element={<Page404 />} />
         <Route path="/licenses" element={<LicencePage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/contact-us" element={<ContactUsPage />} />
       </Routes>
       <FooterSection />
     </BrowserRouter>
