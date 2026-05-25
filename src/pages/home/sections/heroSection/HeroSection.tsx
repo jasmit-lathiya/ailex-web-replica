@@ -131,8 +131,7 @@ const HeroSection = () => {
           ))}
         </div>
         {/* Bottom Fade */}
-        {/* <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-black to-transparent" /> */}
-        {/* </div> */}
+        <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-black to-transparent" />
       </div>
     </section>
   )

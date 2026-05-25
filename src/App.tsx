@@ -8,6 +8,7 @@ import FooterSection from './pages/home/sections/footerSection'
 import Page404 from './pages/page404'
 import LicencePage from './pages/licence'
 import PrivacyPolicyPage from './pages/privacyPolicy'
+import FeaturePage from './pages/feature'
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/feature" element={<FeaturePage />} />
         <Route path="/404" element={<Page404 />} />
         <Route path="/licenses" element={<LicencePage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
