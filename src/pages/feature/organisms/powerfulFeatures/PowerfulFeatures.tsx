@@ -1,58 +1,58 @@
 import { motion } from 'framer-motion'
 
-import increasedEfficiencyIcon from '../../../../assets/advantageSection/increasedEfficiency.svg'
-import aiDrivenAccuracyIcon from '../../../../assets/advantageSection/aiDrivenAccuracy.svg'
-import scalableAndFlexibleIcon from '../../../../assets/advantageSection/scalableAndFlexible.svg'
-import seamlessIntegrationIcon from '../../../../assets/advantageSection/seamlessIntegration.svg'
+import increasedEfficiencyIcon from '../../../../assets/icons/increasedEfficiency.svg'
+import aiDrivenAccuracyIcon from '../../../../assets/icons/aiDrivenAccuracy.svg'
+import scalableAndFlexibleIcon from '../../../../assets/icons/scalableAndFlexible.svg'
+import seamlessIntegrationIcon from '../../../../assets/icons/seamlessIntegration.svg'
+import aiTextClassificationIcon from '../../../../assets/icons/textClassification.svg'
+import dataProcessingIcon from '../../../../assets/icons/dataProcessing.svg'
+import smartIimageLabelingIcon from '../../../../assets/icons/smartIimageLabeling.svg'
+import dataSecuriyIcon from '../../../../assets/icons/increasingChart.svg'
 
 const powerfulFeaturesData = [
   {
-    title: 'Increased efficiency',
+    title: 'Data processing',
     description:
-      'Automate repetitive tasks and streamline workflows to save time and resources.',
+      'AI automates data extraction, transformation, and analysis for accuracy and efficiency.',
+    icon: dataProcessingIcon,
+  },
+  {
+    title: 'Smart image labeling',
+    description:
+      'AI detects objects, classifies visuals, and automates labeling.',
+    icon: smartIimageLabelingIcon,
+  },
+  {
+    title: 'AI-text classification',
+    description:
+      'Sort and categorize text automatically for emails, documents, and content.',
+    icon: aiTextClassificationIcon,
+  },
+  {
+    title: 'Automated backup',
+    description: 'Secure, automatic backups keep your data safe.',
     icon: increasedEfficiencyIcon,
   },
   {
-    title: 'AI-driven accuracy',
+    title: 'Maximum data security',
     description:
-      'Reduce human errors with intelligent automation that ensures precision and reliability.',
-    icon: aiDrivenAccuracyIcon,
+      'Advanced encryption and secure access controls protect your data.',
+    icon: dataSecuriyIcon,
   },
   {
-    title: 'Scalable & Flexible',
-    description:
-      "Adapt AI automation to fit your business needs, whether you're a startup or an enterprise.",
+    title: 'Flexible scalability',
+    description: 'Storage that adapts to your growing needs.',
     icon: scalableAndFlexibleIcon,
   },
   {
-    title: 'Seamless integration',
-    description:
-      'Easily connect with 50+ tools and platforms to enhance your existing systems.',
+    title: 'Enhanced productivity',
+    description: 'Intuitive tools for effortless file management.',
     icon: seamlessIntegrationIcon,
   },
   {
-    title: 'Increased efficiency',
-    description:
-      'Automate repetitive tasks and streamline workflows to save time and resources.',
-    icon: increasedEfficiencyIcon,
-  },
-  {
-    title: 'AI-driven accuracy',
-    description:
-      'Reduce human errors with intelligent automation that ensures precision and reliability.',
+    title: 'Advanced file sharing',
+    description: 'Secure sharing with customizable permissions and expiration.',
     icon: aiDrivenAccuracyIcon,
-  },
-  {
-    title: 'Scalable & Flexible',
-    description:
-      "Adapt AI automation to fit your business needs, whether you're a startup or an enterprise.",
-    icon: scalableAndFlexibleIcon,
-  },
-  {
-    title: 'Seamless integration',
-    description:
-      'Easily connect with 50+ tools and platforms to enhance your existing systems.',
-    icon: seamlessIntegrationIcon,
   },
 ]
 

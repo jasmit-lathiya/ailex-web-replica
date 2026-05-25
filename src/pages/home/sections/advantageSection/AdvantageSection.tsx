@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
-import increasedEfficiencyIcon from '../../../../assets/advantageSection/increasedEfficiency.svg'
-import aiDrivenAccuracyIcon from '../../../../assets/advantageSection/aiDrivenAccuracy.svg'
-import scalableAndFlexibleIcon from '../../../../assets/advantageSection/scalableAndFlexible.svg'
-import seamlessIntegrationIcon from '../../../../assets/advantageSection/seamlessIntegration.svg'
+import increasedEfficiencyIcon from '../../../../assets/icons/increasedEfficiency.svg'
+import aiDrivenAccuracyIcon from '../../../../assets/icons/aiDrivenAccuracy.svg'
+import scalableAndFlexibleIcon from '../../../../assets/icons/scalableAndFlexible.svg'
+import seamlessIntegrationIcon from '../../../../assets/icons/seamlessIntegration.svg'
 
 const advantageData = [
   {

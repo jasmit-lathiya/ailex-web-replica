@@ -11,10 +11,9 @@ import logo8 from '../../../../assets/workflowSection/logo8.svg'
 import logo9 from '../../../../assets/workflowSection/logo9.svg'
 import { SecondaryButton } from '../../../../atoms/button'
 import StateCard from './organisms/stateCard'
+import useBreakpoint from '../../../../utils/useBreakPoint'
 
 const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9]
-
-const radius = 525
 
 const stateData = [
   {
@@ -33,6 +32,9 @@ const stateData = [
 ]
 
 const WorkFlowSection = () => {
+  const { isMobile, isSmallScreen } = useBreakpoint()
+  const radius = isSmallScreen ? 180 : 525
+
   return (
     <section className="relative w-full h-full overflow-hidden flex items-center justify-center p-4">
       <div
@@ -77,10 +79,10 @@ const WorkFlowSection = () => {
       </motion.div>
 
       {/* Logos Visible Area */}
-      <div className="absolute inset-0 overflow-hidden z-10">
-        <div className="absolute inset-0 bottom-1/2 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden z-10 translate-y-[10%] md:translate-y-0">
+        <div className="absolute inset-0 bottom-1/2 overflow-hidden h-[200px] md:h-auto">
           <motion.div
-            className="relative w-[300px] md:w-[1200px] h[300px] md:h-[1200px] mx-auto"
+            className="relative w-[400px] md:w-[1200px] h-[400px] md:h-[1200px] mx-auto"
             animate={{ rotate: 360 }}
             transition={{
               duration: 80,
@@ -89,8 +91,8 @@ const WorkFlowSection = () => {
             }}
           >
             {[...logos, ...logos].map((logo, index) => {
-              const angle = (180 / (logos.length - 1)) * index
-              const radian = (angle * Math.PI) / 180
+              const angle = (360 / (logos.length - 1)) * index
+              const radian = (angle * Math.PI) / 360
 
               const x = radius * Math.cos(radian)
               const y = radius * Math.sin(radian)
