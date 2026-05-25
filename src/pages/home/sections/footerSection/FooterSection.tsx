@@ -1,13 +1,17 @@
+import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
+
+// Components
 import footerSectionBg from '../../../../assets/images/footerBg.jpeg'
+import CTASection from './organisms/ctaSection'
+import FooterLinks from './organisms/footerLinks'
+
+// Icons
 import ailexLogoWithName from '../../../../assets/icons/ailexLogoWithName.svg'
 import facebookIcon from '../../../../assets/icons/facebook.svg'
 import xIcon from '../../../../assets/icons/twitter.svg'
 import linkedInIcon from '../../../../assets/icons/linkedIn.svg'
 import instagramIcon from '../../../../assets/icons/instagram.svg'
-import CTASection from './organisms/ctaSection'
-import { useNavigate } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import FooterLinks from './organisms/footerLinks'
 
 const socialMediaLink = [
   { icon: facebookIcon, name: 'Facebook', link: 'https://www.facebook.com/' },

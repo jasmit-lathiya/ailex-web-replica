@@ -1,7 +1,11 @@
 import { motion } from 'framer-motion'
-import { SecondaryButton } from '../../atoms/button'
-import heroSectionBg from '../../assets/images/heroSectionBg.jpeg'
 import { useNavigate } from 'react-router-dom'
+
+// Components
+import { SecondaryButton } from '../../atoms/button'
+
+// Images
+import heroSectionBg from '../../assets/images/heroSectionBg.jpeg'
 
 const Page404 = () => {
   const navigate = useNavigate()

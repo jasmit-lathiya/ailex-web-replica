@@ -1,13 +1,17 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
+
+// Icons
+import fiveStar from '../../../../assets/icons/fiveStar.svg'
+
+// Images
 import davidCarterImg from '../../../../assets/images/founderImg.jpeg'
 import davidMillerImg from '../../../../assets/images/davidMiller.jpeg'
 import emilyCharterImg from '../../../../assets/images/emilyCharter.jpeg'
 import jamesRobinsonImg from '../../../../assets/images/jamesRobinson.jpeg'
 import michaelThompsonImg from '../../../../assets/images/michaelThompson.jpeg'
 import rachelLeeImg from '../../../../assets/images/rachelLee.jpeg'
-import fiveStar from '../../../../assets/icons/fiveStar.svg'
 import testimonialSectionBg from '../../../../assets/testimonialSection/testimonialSectionBg.jpeg'
-import { useState } from 'react'
 
 const testimonialData = [
   {

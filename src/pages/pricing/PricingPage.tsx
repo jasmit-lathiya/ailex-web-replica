@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion'
+
+// Components
 import AnimatedText from '../../molecules/animatedText'
 import ClientLogoSection from '../../organisms/clientLogoSection'
 import FreeplanCard from '../../organisms/freeplanCard'

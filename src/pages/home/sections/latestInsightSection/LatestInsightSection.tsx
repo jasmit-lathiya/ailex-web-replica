@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
+
+// Components
 import { SecondaryButton } from '../../../../atoms/button'
 import blogData from '../../../../constants/blogData'
 import BlogCard from '../../../../organisms/blogCard'

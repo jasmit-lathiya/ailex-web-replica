@@ -9,9 +9,6 @@ const FeatureCard = ({ title, description, imgSrc }: FeatureCardProps) => {
     <div
       className={
         'flex flex-col gap-6 space-evenly bg-primaryBg p-8 rounded-lg border border-defaultGrey justify-center items-center'
-        // (index % 2 === 0
-        //   ? 'flex-col md:flex-row'
-        //   : 'flex-col-reverse md:flex-row-reverse')
       }
     >
       <div className=" w-[320px] h-[320px] flex justify-center items-center">

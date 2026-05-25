@@ -1,6 +1,9 @@
+// Components
+import { PrimaryButton } from '../../atoms/button'
+
+// Icons
 import freeplanIcon from '../../assets/pricingSection/freeplan.svg'
 import checkedIcon from '../../assets/icons/checked.svg'
-import { PrimaryButton } from '../../atoms/button'
 
 const freeplanFeatures = [
   'AI-powered automation tools',

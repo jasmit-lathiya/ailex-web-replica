@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion'
+
+// Icons
 import increasedEfficiencyIcon from '../../../../assets/icons/increasedEfficiency.svg'
 import aiDrivenAccuracyIcon from '../../../../assets/icons/aiDrivenAccuracy.svg'
 import scalableAndFlexibleIcon from '../../../../assets/icons/scalableAndFlexible.svg'

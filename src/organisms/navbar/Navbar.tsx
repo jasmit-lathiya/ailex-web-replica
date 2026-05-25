@@ -1,13 +1,19 @@
-// components/layout/Navbar.tsx
-
 import { useState } from 'react'
-import ailexLogo from '../../assets/icons/ailexLogoWithName.svg'
 import { motion } from 'framer-motion'
-import { defaultWhite, primaryDisabled } from '../../constants/palette'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+
+// Components
 import { PrimaryButton } from '../../atoms/button'
-import { ChevronDown } from 'lucide-react'
 import Resource from './Resource'
+
+// Icons
+import { ChevronDown } from 'lucide-react'
+
+// Images
+import ailexLogo from '../../assets/icons/ailexLogoWithName.svg'
+
+// Style Constants
+import { defaultWhite, primaryDisabled } from '../../constants/palette'
 
 const navLinks = [
   { name: 'Home', href: '/', mobileOrder: 1 },

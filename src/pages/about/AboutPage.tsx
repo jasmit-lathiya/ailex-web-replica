@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion'
+
+// Components
 import AnimatedText from '../../molecules/animatedText'
-import aboutBg from '../../assets/images/galaxyBg.jpeg'
-import robotHandsImg from '../../assets/images/robotHands.jpeg'
 import { SecondaryButton } from '../../atoms/button'
 import ClientLogoSection from '../../organisms/clientLogoSection'
 import WhyChooseUs from './organisms/whyChooseUs'
+
+// Images
+import aboutBg from '../../assets/images/galaxyBg.jpeg'
+import robotHandsImg from '../../assets/images/robotHands.jpeg'
 
 const AboutPage = () => {
   return (

@@ -1,5 +1,13 @@
 import { motion } from 'framer-motion'
-import workflowSectionBgImg from '../../../../assets/images/galaxyBg.jpeg'
+
+// Components
+import { SecondaryButton } from '../../../../atoms/button'
+import StateCard from './organisms/stateCard'
+
+// Hooks
+import useBreakpoint from '../../../../utils/useBreakPoint'
+
+// Icons
 import logo1 from '../../../../assets/workflowSection/logo1.svg'
 import logo2 from '../../../../assets/workflowSection/logo2.svg'
 import logo3 from '../../../../assets/workflowSection/logo3.svg'
@@ -9,9 +17,9 @@ import logo6 from '../../../../assets/workflowSection/logo6.svg'
 import logo7 from '../../../../assets/workflowSection/logo7.svg'
 import logo8 from '../../../../assets/workflowSection/logo8.svg'
 import logo9 from '../../../../assets/workflowSection/logo9.svg'
-import { SecondaryButton } from '../../../../atoms/button'
-import StateCard from './organisms/stateCard'
-import useBreakpoint from '../../../../utils/useBreakPoint'
+
+// Images
+import workflowSectionBgImg from '../../../../assets/images/galaxyBg.jpeg'
 
 const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9]
 

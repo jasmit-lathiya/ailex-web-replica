@@ -1,14 +1,20 @@
+import { useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
-import heroSectionBg from '../../../../assets/images/heroSectionBg.jpeg'
+
+// Components
+import { PrimaryButton, SecondaryButton } from '../../../../atoms/button'
+import AnimatedText from '../../../../molecules/animatedText'
+
+// Icons
 import starIcon from '../../../../assets/icons/star.svg'
 import aiIcon from '../../../../assets/icons/ai.svg'
+
+// Images
+import heroSectionBg from '../../../../assets/images/heroSectionBg.jpeg'
 import heroSectionChatbotImg from '../../../../assets/heroSection/heroSectionChatbot.png'
 import heroSectionChartImg from '../../../../assets/heroSection/heroSectionChart.png'
 import heroSectionPhotoImg from '../../../../assets/heroSection/heroSectionPhoto.png'
-import { useRef, useState } from 'react'
-import { PrimaryButton, SecondaryButton } from '../../../../atoms/button'
-import AnimatedText from '../../../../molecules/animatedText'
-import { useNavigate } from 'react-router-dom'
 
 const heroSectionImages = [
   heroSectionChatbotImg,

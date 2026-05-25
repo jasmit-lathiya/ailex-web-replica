@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion'
+
+// Components
 import FreeplanCard from '../../../../organisms/freeplanCard'
 import PremiumplanCard from '../../../../organisms/premiumplanCard'
 

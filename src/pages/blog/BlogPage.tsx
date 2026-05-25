@@ -1,10 +1,16 @@
+import { useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
-import blogData from '../../constants/blogData'
+
+// Components
 import AnimatedText from '../../molecules/animatedText'
 import BlogCard from '../../organisms/blogCard'
-import heroSectionBg from '../../assets/images/heroSectionBg.jpeg'
 import { SecondaryButton } from '../../atoms/button'
-import { useMemo, useState } from 'react'
+
+// Constants
+import blogData from '../../constants/blogData'
+
+// Images
+import heroSectionBg from '../../assets/images/heroSectionBg.jpeg'
 
 const BlogPage = () => {
   const [showBlogCount, setShowBlogCount] = useState(6)

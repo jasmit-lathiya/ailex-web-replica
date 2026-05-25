@@ -1,12 +1,18 @@
 import { motion } from 'framer-motion'
+
+// Components
 import FeatureCard from './organisms/featureCard'
+import FounderMessage from '../../../../organisms/founderMessage'
+
+// Icons
 import uploadIcon from '../../../../assets/featureSection/upload.svg'
 import aiProcessIcon from '../../../../assets/icons/aiProcess.svg'
 import resultIcon from '../../../../assets/featureSection/result.svg'
+
+// Images
 import dragAndDropOnClickImg from '../../../../assets/featureSection/dragAndDropOnClick.png'
 import generate3DShapeImg from '../../../../assets/featureSection/generate3DShape.png'
 import searchImageCollectionImg from '../../../../assets/featureSection/searchImageCollection.png'
-import FounderMessage from '../../../../organisms/founderMessage'
 
 const features = [
   {

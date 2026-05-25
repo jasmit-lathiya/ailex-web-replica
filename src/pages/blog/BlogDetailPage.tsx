@@ -1,12 +1,17 @@
-import AnimatedText from '../../molecules/animatedText'
-import pageBg from '../../assets/images/galaxyBg.jpeg'
 import { useParams } from 'react-router-dom'
-import blogData from '../../constants/blogData'
+
+// Components
+import AnimatedText from '../../molecules/animatedText'
 import Page404 from '../page404'
+
+// Images
+import pageBg from '../../assets/images/galaxyBg.jpeg'
+
+// Constants
+import blogData from '../../constants/blogData'
 
 const BlogDetailPage = () => {
   const { id } = useParams()
-  //   const navigate =
   const currentBlogData = blogData.find(
     (item) =>
       id ===

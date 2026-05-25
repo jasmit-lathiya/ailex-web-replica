@@ -1,5 +1,3 @@
-// hooks/useBreakpoint.ts
-
 import { useEffect, useState } from 'react'
 
 const breakpoints = {

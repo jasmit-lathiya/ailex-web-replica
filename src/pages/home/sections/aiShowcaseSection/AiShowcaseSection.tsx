@@ -1,17 +1,22 @@
-import { motion } from 'framer-motion'
-import { SecondaryButton } from '../../../../atoms/button'
-import sentimentAnalysisIcon from '../../../../assets/icons/increasingChart.svg'
-import sentimentAnalysisImg from '../../../../assets/aiShowcaseSection/sentimentAnalysisImg.svg'
-import dataProcessingIcon from '../../../../assets/icons/dataProcessing.svg'
-import dataProcessingImg from '../../../../assets/aiShowcaseSection/dataProcessingImg.svg'
-import smartIimageLabelingIcon from '../../../../assets/icons/smartIimageLabeling.svg'
-import smartIimageLabelingImg from '../../../../assets/aiShowcaseSection/smartImageLabelingImg.avif'
-import aiTextClassificationIcon from '../../../../assets/icons/textClassification.svg'
-import aiTextClassificationImg from '../../../../assets/aiShowcaseSection/aiTextClassificationImg.svg'
-
-import AiShowcaseNameCard from './molecules/aiShowcaseNameCard'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
+
+// Components
+import { SecondaryButton } from '../../../../atoms/button'
+import AiShowcaseNameCard from './molecules/aiShowcaseNameCard'
 import AiShowcaseCard from './organisms/aiShowcaseCard'
+
+// Icons
+import sentimentAnalysisIcon from '../../../../assets/icons/increasingChart.svg'
+import dataProcessingIcon from '../../../../assets/icons/dataProcessing.svg'
+import smartIimageLabelingIcon from '../../../../assets/icons/smartIimageLabeling.svg'
+import aiTextClassificationIcon from '../../../../assets/icons/textClassification.svg'
+
+// Images
+import sentimentAnalysisImg from '../../../../assets/aiShowcaseSection/sentimentAnalysisImg.svg'
+import dataProcessingImg from '../../../../assets/aiShowcaseSection/dataProcessingImg.svg'
+import smartIimageLabelingImg from '../../../../assets/aiShowcaseSection/smartImageLabelingImg.avif'
+import aiTextClassificationImg from '../../../../assets/aiShowcaseSection/aiTextClassificationImg.svg'
 
 const aiShowcasefeatures = [
   {

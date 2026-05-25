@@ -1,12 +1,16 @@
 import { motion } from 'framer-motion'
-import featurePageBg from '../../assets/images/galaxyBg.jpeg'
+
+// Components
 import AnimatedText from '../../molecules/animatedText'
-import analysisImg from '../../assets/aiShowcaseSection/sentimentAnalysisImg.svg'
+import FeatureCard from './organisms/featureCard'
 import ClientLogoSection from '../../organisms/clientLogoSection'
 import PowerfulFeatures from './organisms/powerfulFeatures'
+
+// Images
+import featurePageBg from '../../assets/images/galaxyBg.jpeg'
 import dataProcessingImg from '../../assets/aiShowcaseSection/dataProcessingImg.svg'
 import smartIimageLabelingImg from '../../assets/aiShowcaseSection/smartImageLabelingImg.avif'
-import FeatureCard from './organisms/featureCard'
+import analysisImg from '../../assets/aiShowcaseSection/sentimentAnalysisImg.svg'
 
 const featureCardData = [
   {

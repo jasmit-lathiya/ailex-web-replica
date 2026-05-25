@@ -1,3 +1,6 @@
+import { useNavigate } from 'react-router-dom'
+
+// Icons
 import {
   CirclePlay,
   LifeBuoy,
@@ -8,7 +11,8 @@ import {
   ShieldCheck,
   ArrowUpRight,
 } from 'lucide-react'
-import { useNavigate } from 'react-router-dom'
+
+// Hooks
 import useBreakpoint from '../../utils/useBreakPoint'
 
 const resourceData = [

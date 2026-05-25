@@ -1,5 +1,9 @@
-import { SecondaryButton } from '../../../../../../atoms/button'
 import { motion } from 'framer-motion'
+
+// Components
+import { SecondaryButton } from '../../../../../../atoms/button'
+
+// Icons
 import creditCardIcon from '../../../../../../assets/icons/creditCard.svg'
 import specialOfferIcon from '../../../../../../assets/icons/specilOffer.svg'
 

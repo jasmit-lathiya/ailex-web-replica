@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion'
-import heroSectionBg from '../../assets/images/heroSectionBg.jpeg'
+
+// Components
 import AnimatedText from '../../molecules/animatedText'
+
+// Images
+import heroSectionBg from '../../assets/images/heroSectionBg.jpeg'
 
 const LicenceData = [
   {

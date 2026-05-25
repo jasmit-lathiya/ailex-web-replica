@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+
+// Components
+import { PrimaryButton } from '../../../../atoms/button'
 import IntegrationDetail from './organisms/integrationDetail'
+
+// Images
 import integrationImg1 from '../../../../assets/integrationSection/intImg1.png'
 import integrationImg2 from '../../../../assets/integrationSection/intImg2.svg'
 import integrationImg3 from '../../../../assets/integrationSection/intImg3.svg'
-import { PrimaryButton } from '../../../../atoms/button'
 
 const integrationData = [
   {

@@ -1,10 +1,15 @@
-import contactUsBg from '../../assets/images/galaxyBg.jpeg'
-import accessOurKnowledgeBaseIcon from '../../assets/icons/aiProcess.svg'
-import discoverAilexTutorialsIcon from '../../assets/icons/smartIimageLabeling.svg'
-import joinOurCommunityIcon from '../../assets/icons/aiDrivenAccuracy.svg'
+// Components
 import AnimatedText from '../../molecules/animatedText'
 import ContactCard from './organisms/contactCard'
 import ContactForm from './organisms/contactForm'
+
+// Icons
+import accessOurKnowledgeBaseIcon from '../../assets/icons/aiProcess.svg'
+import discoverAilexTutorialsIcon from '../../assets/icons/smartIimageLabeling.svg'
+import joinOurCommunityIcon from '../../assets/icons/aiDrivenAccuracy.svg'
+
+// Images
+import contactUsBg from '../../assets/images/galaxyBg.jpeg'
 
 const contactCardData = [
   {
